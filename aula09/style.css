@@ -6,15 +6,26 @@ body{
 
 .conteiner{
     background-color: white;
-    margin: 64px;
+    margin: auto;
     border-radius: 10px;
     box-shadow: 6px 6px 6px #0e1d2f;
     color: black;
     padding: 64px;
 }
-.perfil{
+.cabecalho {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+  }
+.tema button {
+    width: 90%;
+    align-self: auto;
+    font-size: 16px;
+    padding: 8px 16px;
+    background: #ECF4FF;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: 2px solid #0E1D2F;
 }
 .perfil-foto{
     border-radius: 400px;
@@ -22,14 +33,16 @@ body{
     box-shadow:0px 4px 4px rgb(0, 0, 0, 0.25);
 }
 .titulo{
-    margin-left: 16px;
+    margin-right: 400px ;
 }
 .titulo h1{
     font-weight: 700;
+    width: 90%;
     font-size: 36px;
 }
 .titulo h3{
     font-weight: 400;
+    width: 90%;
     font-size: 24px;
 }
 .projetos{
@@ -37,15 +50,23 @@ body{
     flex-direction: column;
 }
 .conteudo{
-    background-color: #000000;
+    background-color: #18dbe2;
     border-radius: 40px;
     padding: 40px;
-    width: 500px;
+    width: 90%;
     margin-top: 30px;
 }
 .titulo-list{
     color: white;
     list-style: none;
+    font-weight: 300;
+    font-size: 40px;
+}
+.projeto-item{
+    font-size: 20px;
+    line-height: 48px;
+    font-size: 24px;
+    font-weight: 400;
 }
 a{
     color: white;
@@ -53,4 +74,62 @@ a{
 }
 li:hover{
     text-decoration: underline;
+}
+.dark {
+    background: linear-gradient(236.85deg, #ffffff 27.26%, #ffffff 96.03%);
+}
+    
+.dark .conteiner{
+    background: #000000;
+    color:white;
+}
+  
+.dark .tema button {
+    color: #FFFFFF;
+    background: #1C1C1C;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: 2px solid #F7F7F7;
+}
+@media only screen and (min-width: 1235px) {
+    .conteiner{ width:100%;
+    }
+    .perfil-foto{
+        margin-right:30px;
+    }
+
+}
+@media only screen and (min-width: 999px) {
+    .conteiner{ width:78%;
+    }
+    .titulo{
+        margin-right: 70px;
+    }
+    .perfil-foto{
+        margin-right:30px;
+    }
+
+
+}
+@media only screen and (min-width: 802px) {
+    .conteiner{ width:68%;
+    }
+    .titulo{
+        margin: auto;
+    }
+    .perfil-foto{
+        margin-right:30px;
+    }
+
+}
+@media only screen and (max-width: 794px) {
+    .conteiner{ width:68%;
+    }
+    .titulo{
+        margin: auto;
+    }
+    .perfil-foto{
+        margin-right:30px;
+    }
+
 }
